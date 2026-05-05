@@ -20,13 +20,17 @@ jobs:
     name: Build Docusaurus
     runs-on: ubuntu-latest
     steps:
+      # 修改点 1：添加 node: 24，强制该插件底层使用 Node 24 运行
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          node: 24
+      # 修改点 2：将 node-version 升级为 24，并添加 node: 24
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 24  # 构建网站使用的 Node.js 版本
           cache: npm
+          node: 24          # 强制该插件底层使用 Node 24 运行
 
       - name: Install dependencies
         run: npm ci
