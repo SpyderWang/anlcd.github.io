@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'AN LCD',
+  title: 'An LCD',
   tagline: 'Dinosaurs are cool !!!',
   favicon: 'img/favicon.ico',
 
@@ -78,7 +78,8 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+	  //title: 'My Site',
+      title: 'An LCD',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -88,7 +89,8 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          //label: 'Tutorial',
+		  label: '应用文档',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -105,28 +107,29 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              //label: 'Tutorial',
+			  label: '应用文档',
               to: '/docs/intro',
             },
           ],
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
+        //{
+        //  title: 'Community',
+        //  items: [
+        //    {
+        //      label: 'Stack Overflow',
+        //      href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        //    },
+        //    {
+        //      label: 'Discord',
+        //      href: 'https://discordapp.com/invite/docusaurus',
+        //    },
+        //    {
+        //      label: 'X',
+        //      href: 'https://x.com/docusaurus',
+        //    },
+        //  ],
+        //},
         {
           title: 'More',
           items: [
@@ -141,7 +144,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} anLCD. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} An LCD. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
